@@ -1,0 +1,13 @@
+name: 'List Pull Requests'
+description: 'List open pull requests'
+inputs:
+  owner:
+    description: 'repository owner'
+  repo: 
+    description: 'repo name'
+outputs:
+  prs:
+    description: 'A list of pull requests for the repo provided'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
